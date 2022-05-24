@@ -150,36 +150,37 @@
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body>
-    <div class="testbox">
+    <div class="testbox" style="padding: 5vw;">
       <form action="/">
         <h4>Department</h4>
-        <select id="departments" onchange="choose_name(this.value)">
+        <select id="departments" onchange="local_choose_name(this.value)">
           <option id="default_dep" value="default" selected>*Please Select*</option>
           <option value="FC">FC</option>
           <option value="CT">ICT</option>
-          <option value="BIO">BIO</option>
-          <option value="CHEM">CHEM</option>
-          <option value="CS">CS</option>
-          <option value="CW">CW</option>
-          <option value="ECO">ECO</option>
-          <option value="ENG">ENG</option>
-          <option value="ENT">ENT</option>
-          <option value="EVS">EVS</option>
-          <option value="HIS">HIS</option>
-          <option value="IR">IR</option>
-          <option value="MAT">MAT</option>
-          <option value="MS">MS</option>
-          <option value="PA">PA</option>
-          <option value="PHIL">PHIL</option>
-          <option value="PHY">PHY</option>
-          <option value="POL">POL</option>
-          <option value="PSY">PSY</option>
-          <option value="SOA">SOA</option>
-          <option value="VA">VA</option>
+          <option value="CPA">CC</option>
+          <option value="BIO">Biology</option>
+          <option value="CHM">Chemistry</option>
+          <option value="CS">Computer Science</option>
+          <option value="CW">Creative Writing</option>
+          <option value="ECO">Economics</option>
+          <option value="ENG">English</option>
+          <option value="ENT">Entrepreneurship</option>
+          <option value="EVS">Environmental Studies</option>
+          <option value="HIS">History</option>
+          <option value="IR">International Relations</option>
+          <option value="MAT">Mathematics</option>
+          <option value="MS">Media Studies</option>
+          <option value="PA">Performing Arts</option>
+          <option value="PHIL">Philosophy</option>
+          <option value="PHY">Physics</option>
+          <option value="POL">Political Science</option>
+          <option value="PSY">Psychology</option>
+          <option value="SOA">Sociology</option>
+          <option value="VA">Visual Arts</option>
         </select>
 
         <h4>Course</h4>
-        <select id="course_names" onchange="choose_prof(this.value)">
+        <select id="course_names" onchange="local_choose_prof(this.value)">
           <option id="default_course" value="default" selected>*Please Select Department*</option>
         </select>
 
@@ -188,6 +189,121 @@
           <option id="default_prof" value="default" selected>*Please Select Course*</option>
         </select>
 
+        <h3>Feedback</h3>
+        <h4>How engaging is the prof(s)?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">I can't stay awake for longer than five minutes at a time</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">Changed my life, I haven't missed a single lecture</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>How interesting is the course material?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">Literally just three months of reading books by dead people</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">OG Ashoka experience coolest stuff ever</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>How's the grading?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">Half the class failed and the other half died</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">I vomited on google docs and got an A</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>How light is the workload?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">I still haven't submitted my fifth assignment of the month</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">deadlines kya hota hai</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>How's the attendance policy?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">I got an F for joining five minutes late because I was in the hospital</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">idk i haven't attended since week one</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>How were the TFs/TAs?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">My theory is that they're serial killers</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">The nicest, most helpful, most beautiful people on earth</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>Holistic assessment time: If you could talk to yourself from three months ago, would you recommend this course overall?</h4>
+        <br>
+        <table>
+          <tr>
+            <td style="min-width: 20vw; margin-right: 5vw;">Take any course except this one</td>
+            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td style="min-width: 20vw; margin-left: 5vw;">Drop out of university if you don't get this course</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <h4>Finally, do you have any specific comments/reviews/advice?</h4>
+        <h5>For example, this is taken from last year's site, about debayan's FCP:    Great course, heavy courseload but great grading where you're guaranteed an A as long as you're willing to work for it. I'm doing a CS minor purely because of prof and the things taught in FCP.</h5>
+        <input type="text" name="feedback" style="min-height: 80px;">
+        <br>
+        <h4>Your ashoka email id</h4>
+        <h5>This is completely optional but if you choose to put down your ashoka email id, your review will be given higher weightage (because then we can verify that you actually took the course). Your email will NOT be posted on the site, linked to your review, or used anywhere at all except to check against the course registry.</h5>
+        <input type="text" name="email">
+        <br>
+        <br>
         <div class="btn-block">
           <button type="submit" href="/">Send Feedback</button>
         </div>
