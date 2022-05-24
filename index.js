@@ -65,8 +65,13 @@ let local_choose_name = async (department) => {
 	course_names = new Set(course_names);
 	
 	let select = document.getElementById("course_names");
-	let options = document.querySelectorAll(".course_names option");
-	options.forEach(x => x.remove());
+	
+	// remove current options except *Please Select*
+	for(let i = select.options.length - 1; i > 0; i--) {
+		select.remove(i);
+	}
+
+	// add new options
 	for (let course_name of course_names) {
 		select.add(new Option(course_name, course_name))
 	}
@@ -92,6 +97,13 @@ let local_choose_prof = async (course_name) => {
 	prof_names = new Set(prof_names);
 	
 	let select = document.getElementById("prof_names");
+
+	// remove current options except *Please Select*
+	for(let i = select.options.length - 1; i > 0; i--) {
+		select.remove(i);
+	}
+
+	// add new options
 	for (let prof_name of prof_names) {
 		select.add(new Option(prof_name, prof_name))
 	}
