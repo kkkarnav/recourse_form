@@ -4,155 +4,144 @@
     <title>Course Reviews</title>
     <style>
       html, body {
-      min-height: 100%;
+        min-height: 100%;
+        background-color: black;
+        color: rgb(52, 133, 255);;
       }
       body, div, form, input, select { 
-      padding: 0;
-      margin: 0;
-      outline: none;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 14px;
-      color: #666;
-      line-height: 22px;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 14px;
+        color: #666;
+        line-height: 22px;
       }
-      h1, h4 {
- margin: 15px 0 4px;
-      font-weight: 400;
+      h1, h1, h3, h4 {
+        margin: 15px 0 4px;
+        font-weight: 400;
+      }
+      h1, h1, h3 {
+        color: rgb(52, 133, 255);;
       }
       span {
-      color: red;
+        color: rgb(52, 133, 255);
       }
       .testbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
       }
       form {
-      width: 100%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 2px 5px #ccc; 
+        width: 100%;
+        padding: 20px;
+        background: black;
       }
       input {
-      width: calc(100% - 10px);
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      vertical-align: middle;
+        width: calc(100% - 10px);
+        padding: 5px;
+        border: 1px solid rgb(52, 133, 255);;
+        border-radius: 3px;
+        vertical-align: middle;
+        background: black;
+        color: white;
       }
       input:hover, textarea:hover, select:hover {
-      outline: none;
-      border: 1px solid #095484;
+        outline: none;
+        border: 1px solid rgb(52, 133, 255);;
       }
       .name input {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
       }
       select {
-      padding: 7px 0;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-      background: #e6eef7;
+        padding: 7px 0;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        background: black;
+        color: white;
       }
       option {
-      background: #fff;
+        background: black;
+        color: white;
+        border: 3px solid rgb(52, 133, 255);
       }
       select, table {
-      width: 100%;
-      }
-      .day-visited, .time-visited {
-      position: relative;
-      }
-      .day-visited input, .time-visited input {
-      width: calc(100% - 12px);
-      background: #e6eef7;
-      }
-      input[type="date"]::-webkit-inner-spin-button {
-      display: none;
- }
-      input[type="time"]::-webkit-inner-spin-button {
-      margin: 2px 22px 0 0;
-      }
-      .day-visited i, .time-visited i, input[type="date"]::-webkit-calendar-picker-indicator {
-      position: absolute;
-      top: 8px;
-      font-size: 20px;
-      }
-      .day-visited i, .time-visited i {
-      right: 5px;
-      z-index: 1;
-      color: #a9a9a9;
-      }
-      [type="date"]::-webkit-calendar-picker-indicator {
-      right: 0;
-      z-index: 2;
-      opacity: 0;
-      }
-      .question-answer label {
-      display: block;
-      padding: 0 20px 10px 0;
-      }
-      .question-answer input {
-      width: auto;
-      margin-top: -2px;
+        width: 100%;
       }
       th, td {
-      width: 18%;
-      padding: 15px 0;
-      border-bottom: 1px solid #ccc;
-      text-align: center;
-      vertical-align: unset;
-      line-height: 18px;
-      font-weight: 400;
-      word-break: break-all;
+        width: 18%;
+        padding: 15px 0;
+        text-align: center;
+        vertical-align: unset;
+        line-height: 18px;
+        font-weight: 400;
+        word-break: break-all;
+        color: white;
       }
       .first-col {
-      width: 25%;
-      text-align: left;
+        width: 25%;
+        text-align: left;
       }
       textarea {
-      width: calc(100% - 6px);
+        width: calc(100% - 6px);
       }
       .btn-block {
-      margin-top: 20px;
-      text-align: center;
+        margin-top: 20px;
+        text-align: center;
       }
       button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      -webkit-border-radius: 5px; 
--moz-border-radius: 5px; 
-      border-radius: 5px; 
-      background-color: #095484;
-      font-size: 16px;
-      color: #fff;
-      cursor: pointer;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px; 
+        background-color: rgb(52, 133, 255);;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
       }
       button:hover {
-      background-color: #0666a3;
+        background-color: #0666a3;
+      }
+      input[type='radio'] {
+        height: 15px;
+        width: 15px;
+        vertical-align: middle;
+        background-color: #555555;
+      }
+      td span {
+        font-size: 16px;
       }
       @media (min-width: 568px) {
-      .name {
-      display: flex;
-      justify-content: space-between;
-      }
-      .name input {
-      width: 47%;
-      margin-bottom: 0;
-      }
-      th, td {
-      word-break: keep-all;
-      }
+        .name {
+          display: flex;
+          justify-content: space-between;
+        }
+        .name input {
+          width: 47%;
+          margin-bottom: 0;
+        }
+        th, td {
+          word-break: keep-all;
+        }
       }
     </style>
     <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" src="./material-kit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="testbox" style="padding: 5vw;">
       <form action="/">
-        <h4>Department</h4>
+
+        <h1 style="text-align: center;">Select your course</h1>
+        <br>
+        <h3>Department</h3>
         <select id="departments" onchange="local_choose_name(this.value)" autocomplete="off">
           <option id="default_dep" value="default" selected>*Please Select*</option>
           <option value="FC">FC</option>
@@ -179,18 +168,20 @@
           <option value="VA">Visual Arts</option>
         </select>
 
-        <h4>Course</h4>
+        <h3>Course</h3>
         <select id="course_names" onchange="local_choose_prof(this.value)">
           <option id="default_course" value="default" selected>*Please Select Department*</option>
         </select>
 
-        <h4>Professor</h4>
+        <h3>Professor</h3>
         <select id="prof_names">
           <option id="default_prof" value="default" selected>*Please Select Course*</option>
         </select>
 
-        <h3>Feedback</h3>
-        <h4>How engaging is the prof(s)?</h4>
+        <br><br><br>
+        <h1 style="text-align: center;">Feedback</h1>
+        <br>
+        <h3>How engaging is the prof(s)?</h3>
         <br>
         <table>
           <tr>
@@ -205,7 +196,7 @@
         </table>
         <br>
         <br>
-        <h4>How interesting is the course material?</h4>
+        <h3>How interesting is the course material?</h3>
         <br>
         <table>
           <tr>
@@ -220,7 +211,7 @@
         </table>
         <br>
         <br>
-        <h4>How's the grading?</h4>
+        <h3>How's the grading?</h3>
         <br>
         <table>
           <tr>
@@ -235,7 +226,7 @@
         </table>
         <br>
         <br>
-        <h4>How light is the workload?</h4>
+        <h3>How light is the workload?</h3>
         <br>
         <table>
           <tr>
@@ -250,7 +241,7 @@
         </table>
         <br>
         <br>
-        <h4>How's the attendance policy?</h4>
+        <h3>How's the attendance policy?</h3>
         <br>
         <table>
           <tr>
@@ -265,7 +256,7 @@
         </table>
         <br>
         <br>
-        <h4>How were the TFs/TAs?</h4>
+        <h3>How were the TFs/TAs?</h3>
         <br>
         <table>
           <tr>
@@ -280,7 +271,7 @@
         </table>
         <br>
         <br>
-        <h4>Holistic assessment time: If you could talk to yourself from three months ago, would you recommend this course overall?</h4>
+        <h3>Holistic assessment time: If you could talk to yourself from three months ago, would you recommend this course overall?</h3>
         <br>
         <table>
           <tr>
@@ -295,12 +286,12 @@
         </table>
         <br>
         <br>
-        <h4>Finally, do you have any specific comments/reviews/advice?</h4>
-        <h5>For example, this is taken from last year's site, about debayan's FCP:    Great course, heavy courseload but great grading where you're guaranteed an A as long as you're willing to work for it. I'm doing a CS minor purely because of prof and the things taught in FCP.</h5>
+        <h3>Finally, do you have any specific comments/reviews/advice?</h3>
+        <h4 style="font-size: 12px;">For example, this is taken from last year's site, about debayan's FCP: "Great course, heavy courseload but great grading where you're guaranteed an A as long as you're willing to work for it. I'm doing a CS minor purely because of prof and the things taught in FCP."</h4>
         <input type="text" name="feedback" style="min-height: 80px;">
         <br>
-        <h4>Your ashoka email id</h4>
-        <h5>This is completely optional but if you choose to put down your ashoka email id, your review will be given higher weightage (because then we can verify that you actually took the course). Your email will NOT be posted on the site, linked to your review, or used anywhere at all except to check against the course registry.</h5>
+        <h3>Your ashoka email id</h3>
+        <h4 style="font-size: 12px;">This is completely optional but if you choose to put down your ashoka email id, your review will be given higher weightage (because then we can verify that you actually took the course). Your email will NOT be posted on the site, linked to your review, or used anywhere at all except to check against the course registry.</h4>
         <input type="text" name="email">
         <br>
         <br>
