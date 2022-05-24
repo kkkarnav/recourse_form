@@ -153,7 +153,7 @@
     <div class="testbox" style="padding: 5vw;">
       <form action="/">
         <h4>Department</h4>
-        <select id="departments" onchange="local_choose_name(this.value)">
+        <select id="departments" onchange="local_choose_name(this.value)" autocomplete="off">
           <option id="default_dep" value="default" selected>*Please Select*</option>
           <option value="FC">FC</option>
           <option value="CT">ICT</option>
@@ -196,10 +196,10 @@
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">I can't stay awake for longer than five minutes at a time</td>
             <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="1" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="1" value="3" checked="true" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="1" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="1" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">Changed my life, I haven't missed a single lecture</td>
           </tr>
         </table>
@@ -210,11 +210,11 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">Literally just three months of reading books by dead people</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="2" value="1" /></span></td>
             <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="2" value="3" checked="true"/></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="2" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="2" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">OG Ashoka experience coolest stuff ever</td>
           </tr>
         </table>
@@ -225,11 +225,11 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">Half the class failed and the other half died</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="3" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="3" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="3" value="3" checked="checked" /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="3" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="3" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">I vomited on google docs and got an A</td>
           </tr>
         </table>
@@ -240,11 +240,11 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">I still haven't submitted my fifth assignment of the month</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="4" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="4" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="4" value="3" checked="checked"  /></span></td>
             <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="4" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">deadlines kya hota hai</td>
           </tr>
         </table>
@@ -255,10 +255,10 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">I got an F for joining five minutes late because I was in the hospital</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="5" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="5" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="5" value="3" checked="checked"  /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="5" value="4" /></span></td>
             <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">idk i haven't attended since week one</td>
           </tr>
@@ -270,11 +270,11 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">My theory is that they're serial killers</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="6" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="6" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="6" value="3" checked="checked"  /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="6" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="6" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">The nicest, most helpful, most beautiful people on earth</td>
           </tr>
         </table>
@@ -285,11 +285,11 @@
         <table>
           <tr>
             <td style="min-width: 20vw; margin-right: 5vw;">Take any course except this one</td>
-            <td><span>1 &nbsp;<input type="radio" name="1" value="1" /></span></td>
-            <td><span>2 &nbsp;<input type="radio" name="2" value="2" /></span></td>
-            <td><span>3 &nbsp;<input type="radio" name="3" value="3" /></span></td>
-            <td><span>4 &nbsp;<input type="radio" name="4" value="4" /></span></td>
-            <td><span>5 &nbsp;<input type="radio" name="5" value="5" /></span></td>
+            <td><span>1 &nbsp;<input type="radio" name="7" value="1" /></span></td>
+            <td><span>2 &nbsp;<input type="radio" name="7" value="2" /></span></td>
+            <td><span>3 &nbsp;<input type="radio" name="7" value="3" checked="checked"  /></span></td>
+            <td><span>4 &nbsp;<input type="radio" name="7" value="4" /></span></td>
+            <td><span>5 &nbsp;<input type="radio" name="7" value="5" /></span></td>
             <td style="min-width: 20vw; margin-left: 5vw;">Drop out of university if you don't get this course</td>
           </tr>
         </table>
@@ -305,7 +305,7 @@
         <br>
         <br>
         <div class="btn-block">
-          <button type="submit" href="/">Send Feedback</button>
+          <button type="submit" href="/pages/success">Send Feedback</button>
         </div>
       </form>
     </div>
